@@ -1,7 +1,7 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 
-export default function ClaimantSummaryStatus({ status }: { status: string }) {
+export default function StatementStatus({ status }: { status: string }) {
   return (
     <span
       className={clsx(

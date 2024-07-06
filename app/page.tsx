@@ -20,7 +20,7 @@ export default async function Page() {
           height={760}
           className="hidden md:block"
           alt="Screenshots of the dashboard project showing desktop version"
-        />
+        /></div>
         <Image
           src="/hero-mobile.png"
           width={560}
@@ -28,23 +28,19 @@ export default async function Page() {
           className="block md:hidden"
           alt="Screenshot of the dashboard project showing mobile version"
         />
-      </div>
-      <div>
       <Link
         href="/login"
         className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base">
         <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
       </Link>
         <div className={styles.shape} />
-      </div>  <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
           <strong>Welcome to Riverlyn LLC.</strong> Assets, Unclaimed Property, Audits, Compliance and Solutions{' '}
           <div><a href="https://riverlynllc.com" className="text-blue-500">
             Search For Your Assets!
           </a></div>
-        </p>
-      <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+      <h3 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Developed and Hosted by Jamie Riverlyn.
-      </h1>
+      </h3>
     </main>
   );
 }
