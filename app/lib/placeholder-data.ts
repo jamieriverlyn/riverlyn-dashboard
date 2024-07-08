@@ -85,12 +85,7 @@ const statements = [
             status: 'pending',
             date: '2022-11-14',
           },
-          {
-            claimant_id: claimants[4].id,
-            amount: 3040,
-            status: 'paid',
-            date: '2022-10-29',
-          },
+     
           {
             claimant_id: claimants[0].id,
             amount: 666,
@@ -103,29 +98,13 @@ const statements = [
             status: 'paid',
             date: '2023-06-09',
           },
-          {
-            claimant_id: claimants[4].id,
-            amount: 1250,
-            status: 'paid',
-            date: '2023-06-17',
-          },
-          {
-            claimant_id: claimants[5].id,
-            amount: 8546,
-            status: 'paid',
-            date: '2023-06-07',
-          },
+    
+   
           {
             claimant_id: claimants[1].id,
             amount: 500,
             status: 'paid',
             date: '2023-08-19',
-          },
-          {
-            claimant_id: claimants[5].id,
-            amount: 8945,
-            status: 'paid',
-            date: '2023-06-03',
           },
           {
             claimant_id: claimants[2].id,

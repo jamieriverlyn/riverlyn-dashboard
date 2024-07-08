@@ -1,6 +1,6 @@
 import { db } from '@vercel/postgres';
 import bcrypt from 'bcrypt';
-import { claimants, revenue, users } from '../lib/placeholder-data';
+import { claimants, revenue, statements, users } from '../lib/placeholder-data';
 
 const client = await db.connect();
 
@@ -74,7 +74,7 @@ async function seedUsers() {
         statements.map(
         (statement) => client.sql`
           INSERT INTO statements (claimants_id, amount, status, date)
-          VALUES (${statement.customer_id}, ${statement.amount}, ${statement.status}, ${invoice.date})
+          VALUES (${statement.claimant_id}, ${statement.amount}, ${statement.status}, ${statement.date})
           ON CONFLICT (id) DO NOTHING;
         `,
       ),
