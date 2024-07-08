@@ -72,7 +72,7 @@ const heirs = [
     }
 ];
 
-const claimantSummaries = [
+const statements = [
         {
             claimant_id: claimants[0].id,
             amount: 15795,
@@ -151,7 +151,7 @@ const revenue = [
         { month: 'Dec', revenue: 4800 },
 ];
 
-export { users, claimants, claimantSummaries, revenue }
+export { users, claimants, statements, revenue }
 
 
 
